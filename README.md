@@ -76,7 +76,21 @@ class Codec():
 For more details, please refer to our code.
 
 # Available models
-🤗 links to the Huggingface model hub.
+
+X-Codec is part of Hugging Face's Transformers library (see [model documentation](https://huggingface.co/docs/transformers/en/model_doc/xcodec)).
+
+Below are the Transformers-compatible checkpoints on the Hugging Face Hub 🤗
+
+| Model checkpoint                                  | Semantic Model                                                        | Domain        | Training Data                 |
+|--------------------------------------------|-----------------------------------------------------------------------|---------------|-------------------------------|
+| [xcodec-hubert-librispeech](https://huggingface.co/hf-audio/xcodec-hubert-librispeech)                   | [facebook/hubert-base-ls960](https://huggingface.co/facebook/hubert-base-ls960)   | Speech        | Librispeech                   |
+| [xcodec-wavlm-mls](https://huggingface.co/hf-audio/xcodec-wavlm-mls) (not mentioned in paper)  | [microsoft/wavlm-base-plus](https://huggingface.co/microsoft/wavlm-base-plus)| Speech        | MLS English                   |
+| [xcodec-wavlm-more-data](https://huggingface.co/hf-audio/xcodec-wavlm-more-data) (not mentioned in paper) | [microsoft/wavlm-base-plus](https://huggingface.co/microsoft/wavlm-base-plus)| Speech        | MLS English + Internal data   |
+| [xcodec-hubert-general](https://huggingface.co/hf-audio/xcodec-hubert-general)                 | [ZhenYe234/hubert_base_general_audio](https://huggingface.co/ZhenYe234/hubert_base_general_audio) | General audio | 200k hours internal data      |
+| [xcodec-hubert-general-balanced](https://huggingface.co/hf-audio/xcodec-hubert-general-balanced) (not mentioned in paper) | [ZhenYe234/hubert_base_general_audio](https://huggingface.co/ZhenYe234/hubert_base_general_audio) | General audio | More balanced data            |
+
+
+Below are the original checkpoints.
 
 | Model name                                  | Hugging Face                                                                                           | Config                                                                                                   | Semantic Model                                                        | Domain        | Training Data                 |
 |---------------------------------------------|--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|---------------|-------------------------------|
